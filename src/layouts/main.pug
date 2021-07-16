@@ -1,0 +1,27 @@
+include  /blocks/header/header 
+include  /blocks/footer/footer
+include  /blocks/hero/hero 
+include  /blocks/about/about
+include  /blocks/projects/projects
+include  /blocks/all-projects/all-projects
+include  /blocks/reasons/reasons
+include  /blocks/clients/clients
+include  /blocks/reviews/reviews
+
+block variables
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/css/style.css")
+    title #{title}
+  body
+    +header()
+    main
+      block content
+
+    +footer()  
+
+  script(src="/js/main.min.js")

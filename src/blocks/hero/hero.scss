@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+  background-image: url("/img/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  padding-top: 69px;
+
+  @include md {
+    padding-top: 121px;
+  }
+
+  @include lg {
+    padding-top: 191px;
+  }
+
+  &--open {
+    animation: mova 1s ease-in-out;
+    animation-fill-mode: forwards;
+    padding-top: 416px;
+  }
+
+  &__wrapper {
+    background-image: url("/img/figure-1.svg"), url("/img/figure-2.svg"), url("/img/figure-3.svg"),
+      url("/img/figure-4.svg"), url("/img/figure-5.svg");
+    background-repeat: no-repeat;
+    background-position: -10px 0, 73% 40%, 97% 10%, 7% 85%, 95% 85%;
+    background-size: 23px, 26px, 18px, 23px, 30px;
+  }
+
+  @keyframes mova {
+    0% {
+      padding-top: 69px;
+    }
+
+    100% {
+      padding-top: 416px;
+    }
+  }
+
+  &__text {
+    padding: 50px 0 100px;
+
+    @include lg {
+      @include col(1/2);
+      padding: 115px 0 200px;
+    }
+
+    @include xl {
+      padding: 115px 0 295px;
+    }
+  }
+
+  &__title {
+    font-family: $f-secondary, sans-serif;
+    text-transform: uppercase;
+    color: $c-font-1;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+
+    @include xl {
+      font-size: 70px;
+      line-height: 80px;
+    }
+  }
+
+  &__description {
+    font-family: $f-primary, sans-serif;
+    color: $c-font-1;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: 40px;
+
+    @include xl {
+      margin-top: 85px;
+      font-size: 32px;
+      line-height: 47px;
+    }
+  }
+}

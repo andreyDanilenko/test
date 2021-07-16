@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Roboto-Light"), local("Roboto-Light"), url("/fonts/robotolight.woff2") format("woff2"),
+    url("/fonts/robotolight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto"), url("/fonts/roboto.woff2") format("woff2"),
+    url("/fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Roboto-Medium"), local("Roboto-Medium"), url("/fonts/robotomedium.woff2") format("woff2"),
+    url("/fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto-Bold"), local("Roboto-Bold"), url("/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("/fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Gilroy-light"), local("Gilroy-light"), url("/fonts/gilroylight.woff2") format("woff2"),
+    url("/fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Blogger-Extra-Bold"), local("Blogger-Extra-Bold"), url("/fonts/gilroyextrabold.woff2") format("woff2"),
+    url("/fonts/gilroyextrabold.woff") format("woff");
+}

@@ -1,0 +1,144 @@
+.reviews {
+  &__row:nth-child(1) {
+    position: relative;
+
+    @include md {
+      @include row;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    position: relative;
+    padding: 60px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      background-color: $c-bg-6;
+      width: 45px;
+      height: 4px;
+      right: 50%;
+      margin-right: -17px;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    @include md {
+      padding: 110px 0;
+      @include col(2/3);
+    }
+  }
+
+  &__text-title {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+
+    @include lg {
+      margin: 0;
+    }
+
+    @include xxl {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+
+  &__text-discription {
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+
+    @include xxl {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &__video-wrapper {
+    position: relative;
+
+    @include lg {
+      @include col(3/5);
+    }
+
+    @include xl {
+      @include col(2/3);
+    }
+  }
+
+  &__svg-play,
+  &__svg-circle {
+    display: block;
+    position: absolute;
+    fill: none;
+  }
+
+  &__svg-play {
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -30px;
+  }
+
+  &__svg-circle {
+    top: 50%;
+    left: 50%;
+    margin-left: -90px;
+    margin-top: -90px;
+  }
+
+  &__video-text {
+    position: absolute;
+    color: $c-font-1;
+    font-weight: 300;
+    top: 50%;
+    left: 50%;
+    margin-top: 90px;
+    margin-left: -80px;
+  }
+
+  &__svg-next {
+    
+  }
+
+  &__row:nth-child(2) {
+    padding: 100px 0;
+
+    @include lg {
+      @include row;
+      padding: 175px 0 200px;
+      align-items: center;
+    }
+  }
+
+  &__video {
+    // display: block;
+    width: 100%;
+  }
+
+  &__text {
+    @include lg {
+      @include col(2/5);
+    }
+
+    @include xl {
+      @include col(1/3);
+    }
+  }
+}

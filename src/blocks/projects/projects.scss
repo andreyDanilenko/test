@@ -1,0 +1,177 @@
+.projects {
+  position: relative;
+
+  &__item-img {
+    position: relative;
+    z-index: 1000;
+    display: block;
+
+    @include md {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 400px;
+    }
+
+    &--gazprom {
+      width: 280px;
+
+      @include md {
+        width: 400px;
+      }
+
+      @include lg {
+        top: 70%;
+        width: 700px;
+      }
+
+      @include xl {
+        top: 70px;
+        transform: none;
+        width: 880px;
+      }
+
+      @include xxl {
+        width: 1272px;
+      }
+    }
+
+    &--tinkoff {
+      width: 300px;
+
+      @include md {
+        right: 5%;
+      }
+
+      @include lg {
+        top: 60%;
+        width: 400px;
+      }
+
+      @include xl {
+        z-index: 1333;
+        top: 70px;
+        transform: none;
+        width: 470px;
+      }
+
+      @include xxl {
+        top: 70px;
+        width: 699px;
+      }
+    }
+
+    &--adidas {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    position: relative;
+    &--gazprom {
+      background-color: $c-bg-project-1;
+      z-index: 1500;
+    }
+
+    &--tinkoff {
+      background-color: $c-bg-project-2;
+      z-index: 1300;
+    }
+
+    &--adidas {
+      z-index: 1100;
+      background-color: $c-bg-project-3;
+    }
+  }
+
+  &__row {
+    min-height: 254px;
+    display: flex;
+    align-items: center;
+
+    @include md {
+      min-height: 500px;
+      @include row;
+      justify-content: flex-end;
+    }
+
+    @include md {
+      min-height: 550px;
+    }
+
+    @include xl {
+      min-height: 600px;
+    }
+
+    @include xxl {
+      min-height: 870px;
+    }
+
+    &--tinkoff {
+      justify-content: start;
+    }
+  }
+
+  &__text {
+    padding: 30px 0;
+    @include col(1);
+    position: relative;
+    z-index: 1000;
+
+    @include md {
+      @include col(1/2);
+    }
+
+    &--gazprom {
+      @include lg {
+        @include col(1/3);
+      }
+
+      @include xxl {
+        @include col(1/4);
+      }
+    }
+  }
+
+  &__item-title {
+    font-family: $f-secondary, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 35px;
+
+    @include xl {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &__item-description {
+    position: relative;
+    margin-top: 35px;
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+
+    @include xl {
+      font-size: 29px;
+      line-height: 29px;
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 16px;
+      height: 1px;
+      top: 12px;
+      left: -30px;
+      background-color: $c-bg-2;
+      box-shadow: 0 -1px 0 0 $c-bg-3;
+    }
+  }
+
+  &__item-button {
+    margin-top: 35px;
+  }
+}

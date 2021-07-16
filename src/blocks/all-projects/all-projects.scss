@@ -1,0 +1,31 @@
+.all-projects {
+  position: relative;
+  z-index: 1600;
+  background-color: $c-bg-4;
+  padding: 70px 0;
+  background-image: url("/img/figure-1.svg"), url("/img/figure-2.svg"), url("/img/figure-3.svg"),
+    url("/img/figure-4.svg"), url("/img/figure-5.svg");
+  background-repeat: no-repeat;
+  background-position: 30% -15px, 5% 40%, 75% 43%, 25% 72%, 95% 72%;
+  background-size: 23px, 26px, 18px, 23px, 30px;
+  text-align: center;
+
+  &__button {
+    background-color: $c-bg-4;
+    color: $c-font-1;
+    border-color: $c-bg-1;
+
+    path {
+      fill: $c-font-1;
+    }
+
+    &:hover {
+      background-color: $c-bg-1;
+      color: $c-font-2;
+
+      path {
+        fill: $c-font-2;
+      }
+    }
+  }
+}

@@ -154,7 +154,11 @@
       height: 115px;
     }
 
-    @include xl {
+    @include lg {
+      right: -10px;
+    }
+
+    @include xxl {
       right: -15px;
     }
 

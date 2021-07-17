@@ -1,13 +1,27 @@
 .clients {
-  padding-bottom: 195px;
+  padding-bottom: 100px;
+
+  @include md {
+    padding-bottom: 120px;
+  }
+
+  @include lg {
+    padding-bottom: 140px;
+  }
 
   &__title {
     font-family: $f-secondary, sans-serif;
     text-align: center;
-    padding-top: 195px;
-    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 40px;
     font-weight: 900;
     font-size: 36px;
+    line-height: 36px;
+
+    @include lg {
+      padding-top: 100px;
+      padding-bottom: 70px;
+    }
   }
 
   &__list {

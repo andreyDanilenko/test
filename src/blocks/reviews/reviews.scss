@@ -92,18 +92,30 @@
   &__svg-play {
     top: 50%;
     left: 50%;
-    margin-top: -40px;
+    margin-top: -30px;
     margin-left: -30px;
+
+    @include md {
+      margin-top: -30px;
+      margin-left: -30px;
+    }
   }
 
   &__svg-circle {
+    width: 100px;
     top: 50%;
     left: 50%;
-    margin-left: -90px;
-    margin-top: -90px;
+    margin-top: -80px;
+    margin-left: -60px;
+
+    @include md {
+      width: 160px;
+      margin-left: -90px;
+    }
   }
 
   &__video-text {
+    display: none;
     position: absolute;
     color: $c-font-1;
     font-weight: 300;
@@ -111,13 +123,71 @@
     left: 50%;
     margin-top: 90px;
     margin-left: -80px;
+
+    @include md {
+      display: block;
+    }
   }
 
-  &__svg-next {
-    
+  &__button-next {
+    position: relative;
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    right: -10px;
+    bottom: 15%;
+    width: 14px;
+    height: 55px;
+
+    @include md {
+      margin-top: -56px;
+      right: 0;
+    }
+
+    @include lg {
+      top: 50%;
+      margin-top: -56px;
+      right: 10px;
+      width: 28px;
+      height: 115px;
+    }
+
+    @include xl {
+      right: -15px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 30px;
+      left: 30%;
+      background-color: $c-bg-10;
+      border-radius: 5px;
+
+      @include lg {
+        width: 7px;
+        height: 62px;
+      }
+    }
+
+    &::before {
+      top: 0;
+
+      transform: rotate(-20deg);
+    }
+    &::after {
+      bottom: 0;
+
+      transform: rotate(20deg);
+    }
   }
 
   &__row:nth-child(2) {
+    position: relative;
     padding: 100px 0;
 
     @include lg {

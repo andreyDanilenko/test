@@ -44,7 +44,7 @@ function createAboutItem(obj) {
   itemAbout.appendChild(titleAboutItem);
 
   const descriptionAboutItem = document.createElement('p');
-  descriptionAboutItem.classList.add('about__item-description');
+  descriptionAboutItem.classList.add('about__item-discription');
   descriptionAboutItem.innerHTML = obj.description;
   itemAbout.appendChild(descriptionAboutItem);
 

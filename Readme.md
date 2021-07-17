@@ -13,4 +13,4 @@
 
 ## Демострация  
 
-*[ImageSpark](https://andreydanilenko.github.io/assemblyTest/).
+[ImageSpark](https://andreydanilenko.github.io/assemblyTest/)

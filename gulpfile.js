@@ -48,7 +48,7 @@ function script() {
 };
 
 function image() {
-  return src('src/accets/img/**/*')
+  return src('src/assets/img/**/*')
     .pipe(imagemin([
       imagemin.gifsicle({ interlaced: true }),
       imagemin.mozjpeg({ quality: 75, progressive: true }),
@@ -65,7 +65,7 @@ function image() {
 
 
 function fonts() {
-  return src('src/accets/fonts/**/*')
+  return src('src/assets/fonts/**/*')
     .pipe(dest('dist/fonts'))
     .pipe(browserSync.stream())
 };
